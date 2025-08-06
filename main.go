@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	kafka "github.com/vinicius91/strimzi-client-go/apis/kafka.strimzi.io/v1beta2"
+	kafka "github.com/vinicius91/strimzi-client-go/pkg/apis/kafka.strimzi.io/v1beta2"
 )
 
 func main() {
