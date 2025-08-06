@@ -12,7 +12,7 @@ At the moment, the partially-automated process is:
 1. Edit the openAPI schemas to remove any 'oneOf' statements, since the GoLang type generator we
 use does not handle those.
 
-1. Use [crd-codegen](https://github.com/RedHatInsights/crd-codegen) to generate types from the CRD YAML.
+1. Use [crd-codegen](https://github.com/RedHatInsights/crd-codegen) to generate types from the CRD YAML. (Already done, the files are under the folder generated)
 
 2. Edit the root type definitions in each file so that they implement the runtime.Object interfaces, add a "List" type for the root object, and add kubebuilder annotations. For example, the root "Kafka" object within Kafka.go will initially look like this:
 
@@ -76,4 +76,4 @@ use does not handle those.
 
 4. Convert int types to int32: ```sed -i 's/int `json/int32 `json'/g *```
 
-5. Finally run `controller-gen object paths=./...` is run to generate `DeepCopy` implementations
+5. Finally run `./controller-gen object paths=./...` is run to generate `DeepCopy` implementations

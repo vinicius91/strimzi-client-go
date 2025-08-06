@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	kafka "github.com/RedHatInsights/strimzi-client-go/apis/kafka.strimzi.io/v1beta2"
+	kafka "github.com/vinicius91/strimzi-client-go/apis/kafka.strimzi.io/v1beta2"
 )
 
 func main() {
