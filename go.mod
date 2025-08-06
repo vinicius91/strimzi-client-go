@@ -5,6 +5,7 @@ go 1.24.3
 require (
 	k8s.io/apiextensions-apiserver v0.33.3
 	k8s.io/apimachinery v0.33.3
+	github.com/vinicius91/strimzi-client-go v0.47.1 // indirect
 )
 
 require (
