@@ -5,8 +5,9 @@ go 1.24.3
 require (
 	k8s.io/apiextensions-apiserver v0.33.3
 	k8s.io/apimachinery v0.33.3
-	github.com/vinicius91/strimzi-client-go v0.47.2 // indirect
 )
+
+require sigs.k8s.io/controller-runtime v0.21.0
 
 require (
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
